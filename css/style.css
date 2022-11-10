@@ -413,3 +413,25 @@ hr{
     align-items:center;
     position:relative
 }
+
+/* domande frequenti */
+.domande-frequenti{
+    width: 100%;
+    min-height:800px;
+
+}
+
+.hr-large{
+    width: 100%;
+}
+
+.dom-freq-row{
+    justify-content: space-between;
+    min-height: 60px;
+    align-items: center;
+    font-weight: bold;
+} 
+
+.open-down{
+    margin-right: 50px;
+}
