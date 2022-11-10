@@ -16,6 +16,10 @@ header{
     background-color:#B4D0E7 ;
 }
 
+.color-blue{
+    color:#0061FF;
+    
+}
 
 
 footer{
@@ -55,6 +59,23 @@ a{
     margin-bottom: 40px;
 }
 
+h1{
+     font-size: 85px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 150px 0 55px 0;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
 /* header */
 
 nav{
@@ -63,6 +84,8 @@ nav{
     height: 80px;
     /* border: 2px dashed #000; */
     position:fixed;
+    top:0;
+    right: 0;
     z-index: 1;
 }
 
@@ -90,7 +113,7 @@ nav{
 }
 
 .c-start{
-
+    
     justify-content:flex-start;
 }
 
@@ -113,10 +136,6 @@ li{
 
 /* Jumbotron */
 
-h1{
-     font-size: 85px;
-     margin-bottom: 50px;
-}
 
 .jumbo-row{
     display: flex;
@@ -124,15 +143,20 @@ h1{
 
 .jumbo-col-big{
 width:70%;
-min-height: 50px;
+min-height: 30px;
 /* border: 2px solid #ff0000; */
+position: relative;
+left:0;
+bottom:-80px
 }
 
 .jumbo-col-small{
 width:30%;
 min-height: 50px;
 /* border: 2px solid #ff0000; */
-margin-bottom: 20px;
+position: relative;
+left:0;
+bottom:-80px
 }
 
 .jumbo-par{
@@ -146,13 +170,14 @@ margin-bottom: 20px;
 .jumbo-card{
     max-width: 100%;
     position: relative;
+    
 }
 
 .jumbo-img{
     max-width: 100%;
-    position: absolute;
-    top:-3px;
-    right:-25px;
+    position: relative;
+    top:0px;
+    right:-23px;
     
 }
 
@@ -164,10 +189,6 @@ margin-bottom: 20px;
     border: 2px dashed #ff0000
 }
 
-h2{
-    font-size: 40px;
-    margin: 150px 0 55px 0;
-}
 
 .fake-checkbox{
     border: 2px solid #D5D5D7;
@@ -198,17 +219,17 @@ h2{
 
 .type-plan-row{
     display: flex;
-    justify-content: space-between;
-    gap:20px
+    justify-content: flex-start;
+    gap:20px;
 }
 
 .type-plan-col{
-    width: calc(100% / 3);
+    width: calc(100% / 3 );
     border: 2px dashed #000;
     min-width:50px;
     min-height:100px;
     border:2px solid #dedede;
-    padding: 0 10px;
+    
     
 }
 
@@ -216,9 +237,44 @@ h2{
     text-align:center;
     padding: 10px;
     border-bottom:2px solid #dedede;
-    margin-bottom: 40px
+    margin-bottom: 30px;
+    width:100%;
 }
 
-.specific-plan{
+
+.container-col{
+    max-width: 70%;
+    min-height:800px ;
+    margin:0 auto;
+}
+.price{
+    line-height: 55px;
+}
+
+.specific-price{
+    color: #8B8B8B;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.details-plan-row{
+    display: flex;
+    gap: 10px;
 
 }
+.details-plan-row > *{
+   margin-bottom:20px;
+}
+
+p .link-decorated{
+    text-decoration: underline;
+    color: #0061FF;
+    margin-top: 80px;
+    display: inline-block;
+}
+
+hr{
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
