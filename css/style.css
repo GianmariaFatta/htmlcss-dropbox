@@ -62,7 +62,7 @@ a{
     background-color:#0061FF ;
     color:#fff;
     padding: 8px 16px;
-    margin-bottom: 40px;
+    display: inline-block;
    
 }
 
@@ -78,12 +78,17 @@ h2{
 h3{
     font-size: 30px;
     margin-bottom: 30px;
+    
 }
 
 h4{
     margin-bottom: 50px;
     margin-top: 20px;
 }
+
+img{
+    max-width: 100%;
+ }
 
 /* header */
 
@@ -96,7 +101,10 @@ nav{
     top:0;
     right: 0;
     z-index: 1;
+    align-items: center;
 }
+
+
 
 .jumbotron{
     margin-top:180px;
@@ -159,8 +167,10 @@ bottom:-80px
     margin-bottom: 40px;
 }
 
+
+
 .jumbo-button{
-    display: inline-block;
+    margin-bottom: 40px ;
 }
 
 .jumbo-card{
@@ -170,7 +180,6 @@ bottom:-80px
 }
 
 .jumbo-img{
-    max-width: 100%;
     position: relative;
     top:0px;
     right:-23px;
@@ -213,6 +222,8 @@ bottom:-80px
    
 }
 
+/* plan */
+
 .type-plan-row{
     justify-content: flex-start;
     gap:20px;
@@ -223,9 +234,12 @@ bottom:-80px
     border: 2px dashed #000;
     min-width:50px;
     min-height:100px;
-    border:2px solid #dedede;
+    border:2px solid #dedede;   
     
-    
+}
+
+.plan-button{
+    margin-top:40px
 }
 
 .plan-title{
@@ -242,6 +256,7 @@ bottom:-80px
     min-height:800px ;
     margin:0 auto;
 }
+
 .price{
     line-height: 55px;
 }
@@ -275,7 +290,7 @@ hr{
 
  .type-plan-row-large{
     width: 100%;
-    min-height: 100px;
+    /* min-height: 100px; */
     border: 1px solid #8B8B8B;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -297,11 +312,14 @@ hr{
     padding:20px;
  }
 
+ /* partner */
+
 .partner-row{
     width: 100%;
     min-height: 50px;
     justify-content: space-between;
     /* border:2px solid #ff0000; */
+    margin-bottom: 100px;
 }
 .partner-col-small{
     width:40%;
@@ -317,9 +335,6 @@ hr{
     /* border:2px dashed #ff0000; */
 }
 
- .partner-img{
-    max-height: 100%;
- } 
 
  a.alternative-button{
     margin-top: 40px;
@@ -329,3 +344,19 @@ hr{
     border: 2px solid #8B8B8B;
     display: inline-block;
  }
+
+ /* Business */
+
+ .business-col{
+    width:calc(100% / 3);
+    min-height:100px;
+    border: 2px dashed purple;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+ }
+
+ .business-row{
+    gap:20px
+ }
+
