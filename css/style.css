@@ -90,6 +90,10 @@ img{
     max-width: 100%;
  }
 
+ .pad-20{
+    padding:60px;
+ }
+
 /* header */
 
 nav{
@@ -275,7 +279,7 @@ bottom:-80px
    margin-bottom:20px;
 }
 
-p .link-decorated{
+.link-decorated{
     text-decoration: underline;
     color: #0061FF;
     margin-top: 80px;
@@ -360,3 +364,52 @@ hr{
     gap:20px
  }
 
+ /* team */
+
+ .team-col{
+    width:60%;
+    min-height:200px;
+ }
+
+ 
+/* square */
+
+.square-col{
+    width: calc(100% / 3);
+    min-height:600px;
+    border: 2px dashed blue;
+    flex-wrap:wrap;
+}
+
+.square-layout{
+    width: 50%;
+    height:50%;
+    border:2px dashed blueviolet;
+    display: inline-block;
+}
+
+#designit{
+    background-image: url(../img/designit.png);
+    background-color: #A2D39B ;
+    background-size:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+}
+
+/* try-for-free */
+.try-for-free-row{
+    background-color:#B4D0E7 ;
+    
+    gap:40px
+}
+
+.try-for-free-col{
+    width: 50%;
+    min-height: 200px;
+    border:2px dashed blueviolet;
+    justify-content: flex-end;
+    align-items:center;
+    position:relative
+}
