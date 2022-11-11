@@ -114,6 +114,22 @@ a.button:hover{
     border-bottom:none;
 }
 
+.bouncing {
+    animation: bounce-in 2s linear infinite;
+  }
+  @keyframes bounce-in {
+    0% {
+      opacity: 1;
+      transform: scale(.7);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.3);
+    }
+    70% { transform: scale(.9); }
+    100% { transform: scale(.7); }
+  }
+
 /* header */
 
 nav{
@@ -217,6 +233,11 @@ bottom:-80px
 
 /* main */
 
+
+.h2-free{
+    color: #61082B;
+}
+
 .square-partner{
     width: 100%;
     min-height: 500px ;
@@ -298,6 +319,12 @@ bottom:-80px
     margin-bottom: 30px;
 }
 
+.divisor{
+    display: block;
+    margin-bottom: 52px;
+    
+}
+
 .details-plan-row{
     gap: 10px;
 }
@@ -340,7 +367,7 @@ hr{
     width: 30%;
     /* border: 2px dashed #f00; */
     min-height: 100px;
-    padding:20px;
+    padding:30px;
  }
 
  /* partner */
@@ -374,6 +401,7 @@ hr{
     font-weight:bold ;
     border: 2px solid #8B8B8B;
     display: inline-block;
+
  }
 
  /* Business */
@@ -403,7 +431,7 @@ hr{
 
 .square-col{
     width: calc(100vw / 3);
-    min-height:calc(100vw / 3);
+    height:calc(100vw / 3);
     /* border: 2px dashed blue; */
     flex-wrap:wrap;
 }
@@ -411,7 +439,7 @@ hr{
 .square-layout{
     width: 50%;
     height:50%;
-    border:2px dashed blueviolet;
+    /* border:2px dashed blueviolet; */
     
 }
 
@@ -461,7 +489,8 @@ hr{
 
 .try-for-free-row{
     background-color:#B4D0E7 ;
-    gap:40px
+    height: 500px;
+    
 }
 
 
@@ -472,7 +501,7 @@ hr{
     /* border:2px dashed blueviolet; */
     justify-content: flex-end;
     align-items:center;
-    position:relative
+    position:relative;
 }
 
 /* domande frequenti */
